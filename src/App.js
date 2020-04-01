@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import marked from "marked";
+import Editor from "./components/Editor";
+import Toolbar from "./components/Toolbar";
+import Previewer from "./components/Previewer";
 
 
 marked.setOptions({
   breaks: true
 });
 
-const renderer = new marked.Renderer();
+//const renderer = new marked.Renderer();
 
 class App extends Component {
   constructor(props){
@@ -26,13 +28,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="appWrapper">
+          <div className="editorWrap">
+            <Toolbar text="Editor" />
+            <Editor 
+                markdown={this.state.markdown} 
+                onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="previewWrap">
+            <Toolbar text="Previewer" />
+            <Previewer markdown={this.state.markdown}/>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
