@@ -72,7 +72,7 @@ class App extends Component {
       <div>
         <h1 className="title">React Markdown Previewer</h1>
         <div className="appWrapper">
-          <div className="editorWrap">
+          <div className="editorWrapper">
             <Toolbar text="Editor" />
             <Editor 
                 markdown={this.state.markdown} 
