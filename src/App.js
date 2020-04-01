@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import marked from "marked";
 
+
+marked.setOptions({
+  breaks: true
+});
+
 class App extends Component {
   render() {
     return (
