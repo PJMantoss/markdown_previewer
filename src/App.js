@@ -11,6 +11,45 @@ marked.setOptions({
 });
 
 //const renderer = new marked.Renderer();
+
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      markdown: placeholder
+    }
+  }
+
+  handleChange = e => {
+    this.setState({
+      markdown: e.target.value
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <h1 className="title">React Markdown Previewer</h1>
+        <div className="appWrapper">
+          <div className="editorWrap">
+            <Toolbar text="Editor" />
+            <Editor 
+                markdown={this.state.markdown} 
+                onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="previewWrapper">
+            <Toolbar text="Previewer" />
+            <Previewer markdown={this.state.markdown}/>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
 const placeholder =  `# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
@@ -57,42 +96,5 @@ And here. | Okay. | I think we get it.
 
 ![React Logo w/ Text](https://goo.gl/Umyytc)
 `;
-
-
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      markdown: placeholder
-    }
-  }
-
-  handleChange = e => {
-    this.setState({
-      markdown: e.target.value
-    });
-  }
-  render() {
-    return (
-      <div>
-        <h1 className="title">React Markdown Previewer</h1>
-        <div className="appWrapper">
-          <div className="editorWrap">
-            <Toolbar text="Editor" />
-            <Editor 
-                markdown={this.state.markdown} 
-                onChange={this.handleChange}
-            />
-          </div>
-
-          <div className="previewWrap">
-            <Toolbar text="Previewer" />
-            <Previewer markdown={this.state.markdown}/>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
 
 export default App;
