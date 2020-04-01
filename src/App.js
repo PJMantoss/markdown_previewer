@@ -74,7 +74,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div>
+        <h1 className="title">React Markdown Previewer</h1>
         <div className="appWrapper">
           <div className="editorWrap">
             <Toolbar text="Editor" />
