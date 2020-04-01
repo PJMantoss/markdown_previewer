@@ -10,8 +10,6 @@ marked.setOptions({
   breaks: true
 });
 
-//const renderer = new marked.Renderer();
-
 
 class App extends Component {
   constructor(props){
