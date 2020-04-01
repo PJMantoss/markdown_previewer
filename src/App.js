@@ -8,7 +8,21 @@ marked.setOptions({
   breaks: true
 });
 
+const renderer = new marked.Renderer();
+
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      markdown: placeholder
+    }
+  }
+
+  handleChange = e => {
+    this.setState({
+      markdown: e.target.value
+    });
+  }
   render() {
     return (
       <div className="App">
