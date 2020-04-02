@@ -14,6 +14,6 @@ export default function Previewer(props) {
             dangerouslySetInnerHTML={{
                 __html: marked(props.markdown, { renderer: renderer })
             }}
-        />
+        ></div>
     );
 };

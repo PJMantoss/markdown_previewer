@@ -4,8 +4,8 @@ import Editor from "./components/Editor";
 import Toolbar from "./components/Toolbar";
 import Previewer from "./components/Previewer";
 
-
-const placeholder =  `# Welcome to my React Markdown Previewer!
+const placeholder = 
+`# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
 ### And here's some other cool stuff:
@@ -49,8 +49,7 @@ And here. | Okay. | I think we get it.
 - Even if you use dashes or asterisks.
 * And last but not least, let's not forget embedded images:
 
-![React Logo w/ Text](https://goo.gl/Umyytc)
-`;
+![React Logo w/ Text](https://goo.gl/Umyytc)`;
 
 
 class App extends Component {
