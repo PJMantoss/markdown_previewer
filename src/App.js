@@ -3,6 +3,7 @@ import './App.css';
 import Editor from "./components/Editor";
 import Toolbar from "./components/Toolbar";
 import Previewer from "./components/Previewer";
+import ReactFCCtest from "react-fcctest";
 
 const placeholder = 
 `# Welcome to my React Markdown Previewer!
@@ -84,6 +85,7 @@ class App extends Component {
             <Previewer markdown={this.state.markdown}/>
           </div>
         </div>
+        <ReactFCCtest/>
       </div>
     );
   }
