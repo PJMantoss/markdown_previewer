@@ -1,5 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Patua+One&display=swap');
+/*font-family: 'Patua One', cursive;
+font-family: 'Baloo 2', cursive;*/
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  box-sizing: border-box;
+  background: #619E9E;
+}
+
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.editorWrapper {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.editorWrapper #toolbar {
+  width: 98%;
+  background: #224B4B;
+}
