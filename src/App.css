@@ -44,6 +44,10 @@ body {
     width: 80%;
     margin: auto;
   }
+
+  .title {
+    font-size: 30px;
+  }
 }
 
 .editorWrapper #toolbar {
