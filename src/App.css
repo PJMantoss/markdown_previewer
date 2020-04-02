@@ -28,4 +28,21 @@ body {
 .editorWrapper #toolbar {
   width: 98%;
   background: #224B4B;
+  color: white;
+  font-family: 'Patua One', cursive;
+  font-size: 18px;
+  padding: 7px 0 7px 15px;
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px 2px rgb(61, 99, 99);
+}
+
+.editorWrapper #editor {
+  width: 98%;
+  min-height: 200px;
+  border-top: 0;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  padding: 7px 0 7px 15px;
+  box-shadow: 1px 1px 10px 2px rgb(61, 99, 99);
 }
