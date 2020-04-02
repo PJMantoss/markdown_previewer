@@ -20,6 +20,14 @@ body {
   margin-top: 10px;
 }
 
+.title {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Patua One', cursive;
+  font-size: 45px;
+  color: rgb(58, 57, 57);
+}
+
 .editorWrapper {
   width: 600px;
   margin: 20px auto;
@@ -40,6 +48,8 @@ body {
   width: 98%;
   background: rgb(125, 202, 202);
   min-height: 200px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 16px;
   border-top: 0;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
@@ -50,7 +60,7 @@ body {
 
 .previewWrapper {
   width: 800px;
-  margin: 15px auto 50px auto;
+  margin: 15px auto;
   height: 250px;
 }
 
@@ -69,11 +79,14 @@ body {
   width: 100%;
   background: rgb(125, 202, 202);
   height: 450px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 18px;
   overflow-y: scroll;
   border-top: 0;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   padding: 0  0 0 15px;
+  margin-bottom: 50px;
   box-shadow: 1px 1px 10px 2px rgb(61, 99, 99);
 }
