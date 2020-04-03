@@ -149,6 +149,16 @@ body {
   margin: 2px 0;
 }
 
+#preview > h3 {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 #preview > table {
   border-collapse: collapse;
 }
