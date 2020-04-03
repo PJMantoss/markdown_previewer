@@ -134,4 +134,11 @@ body {
 #preview > pre {
   background: white;
   padding: 5px;
+  width: 90%;
+}
+
+#preview > h1 {
+  border-bottom: 2px solid black;
+  width: 90%;
+  margin: 4px 0;
 }

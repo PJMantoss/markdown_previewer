@@ -11,7 +11,7 @@ const placeholder =
 ## This is a sub-heading...
 ### And here's some other cool stuff:
   
-Heres some code, \`<div></div>\`, between 2 backticks.
+Here is some code, \`<div></div>\`, between 2 backticks.
 
 \`\`\`
 // this is a multi-line code:
