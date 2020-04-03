@@ -63,7 +63,7 @@ body {
 
 .editorWrapper #editor {
   width: 98%;
-  background: rgb(125, 202, 202);
+  background: rgb(173, 226, 226);
   min-height: 200px;
   font-family: 'Baloo 2', cursive;
   font-size: 16px;
@@ -102,7 +102,7 @@ body {
 
 .previewWrapper #preview {
   width: 100%;
-  background: rgb(125, 202, 202);
+  background: rgb(173, 226, 226);
   height: 450px;
   font-family: 'Baloo 2', cursive;
   font-size: 18px;
@@ -116,7 +116,7 @@ body {
   box-shadow: 1px 1px 10px 2px rgb(61, 99, 99);
 }
 
-#preview > blockquote {
+#preview blockquote {
   border-left: 3px solid black;
   padding-left: 5px;
   margin-left: 20px;
@@ -124,32 +124,39 @@ body {
   font-weight: 700;
 }
 
-#preview > code {
+#preview code {
   background: white;
   padding: 1px 4px 2px 4px;
   font-size: 12px;
   font-weight: bold;
+
+  border-radius: 4px;
 }
 
-#preview > pre {
+#preview pre {
+  display: block;
+  font-family: 'Baloo 2', cursive;
   background: white;
   padding: 5px;
   width: 90%;
+  white-space: pre;
+  margin: 10px 0;
+  border-radius: 7px;
 }
 
-#preview > h1 {
+#preview h1 {
   border-bottom: 2px solid black;
   width: 90%;
   margin: 4px 0;
 }
 
-#preview > h2 {
+#preview h2 {
   border-bottom: 1px solid black;
   width: 80%;
   margin: 2px 0;
 }
 
-#preview > h3 {
+#preview h3 {
   display: block;
   font-size: 20px;
   font-weight: bold;
@@ -159,7 +166,15 @@ body {
   margin-inline-end: 0px;
 }
 
-#preview > table {
+#preview p {
+  display: block;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+#preview table {
   border-collapse: collapse;
 }
 
